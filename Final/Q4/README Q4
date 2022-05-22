@@ -1,0 +1,7 @@
+Notes:
+
+Pipe Redirection:
+
+For this question I added a new array to DISK_driver.h (char* pipeArr[FAT_SIZE]), this is the OS level data structure that holds the buffers for the files we open. When we open a file I will malloc the corosponding array index with the max number of chars a file can have (partition.block_size*partition.total_blocks), and I free the index when we close a file.
+
+I only used the interpreter.c and didn't see any point in writing code in DISK_driver_problem4 files.

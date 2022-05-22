@@ -1,0 +1,15 @@
+Notes:
+
+I had to make some changes for this qusestion.
+
+1. I added a new feild "int byteIndex" in the FAT struct. This byteIndex is supposed to be the byte (char from begining of the file) that the file pointer is pointing at. The byteIndex is set to 0 when a file is opened and is incremented in read/readEXAM and write/writeEXAM and is changed when we do a seekEXAM accordingly.
+This helps us a lot to figure out how many chars of data we have left in a file, where the file pointer is at, and how many chars we can seek forwards and backwards.
+I couldn't find an easy way to properly count the number of chars we could seek in a file, since there are a lot of edge cases that woudn't be easy to check. For example, if we had seeked before, the file takes a complete block and the next block is taken by another file, then in that case we had no idea where we are at in the file and how many chars we can seek.
+	Changes made:
+	I have commented the added parts with // NEW and ended then with // END if you want to search them.
+		a. Added byteIndex in FAT
+		b. Initilize byteIndex in initIO()
+		c. Set byteIndex to 0 in open/openEXAM
+		d. incremnent byteIndex in read/readEXAM and write/writeEXAM
+
+2. The rest of the progarm is written in the 3 files given.

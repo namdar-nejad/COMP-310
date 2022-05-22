@@ -1,0 +1,5 @@
+Notes:
+
+1. I have only used DISK_driver_problem1.c, DISK_driver_problem1.h, & interpreted.c for this question.
+
+2. I had to add a manual rewind for the file pointer before reading from a file in readCommandEXAM, since we needed to read from the beggining. This will be removed for the other questions.

@@ -1,0 +1,9 @@
+help
+set x 10 
+set y 20
+print c
+print y
+run script.txt
+print x
+print z
+quit

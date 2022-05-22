@@ -1,0 +1,6 @@
+set y 10
+print y
+help
+exec test1.txt test2.txt
+exec test1.txt
+exec test1.txt test2.txt test3.txt

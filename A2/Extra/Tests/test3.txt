@@ -1,0 +1,5 @@
+set z 10
+print z
+print x
+set m 10
+run test4.txt

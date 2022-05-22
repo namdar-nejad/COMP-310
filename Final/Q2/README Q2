@@ -1,0 +1,5 @@
+Notes:
+
+1. I have only used DISK_driver_problem2.c, DISK_driver_problem2.h, & interpreted.c for this question.
+
+2. I have also removed the manual rewind in the readExamFuncion, put in place for Q1.

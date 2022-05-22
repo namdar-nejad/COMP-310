@@ -1,0 +1,6 @@
+I have built my code on the solution for A1.
+
+run function --> in cpu.c, I changed the name from run() to runPCB() to avoid conflicts with the function name run() for running a script from A1.
+
+If there is a error when loading a processes either with ram storage or file then non of the processes will be loaded and the prompt will reappear.
+If there is an instruction error on any of the lines of any of the processes being executed then all the processes will be stoped and the user will be prompted, there was nothing on the assignment handout regarding this scenario and I posted several question on Piazza but haven't gotten any answers by now.

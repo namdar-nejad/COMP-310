@@ -1,0 +1,12 @@
+mount partition4 10 5
+open_EXAM 0 file1
+write_EXAM 0 [hello world test]
+close_EXAM 0
+open_EXAM 0 file1
+readpipe_EXAM 0 | set x
+seek_EXAM 0 -4
+readpipe_EXAM 0 var
+print var
+close_EXAM 0
+print x
+quit

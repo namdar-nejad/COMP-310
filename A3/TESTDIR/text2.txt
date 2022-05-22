@@ -1,0 +1,40 @@
+set x 1
+print x
+set x 4
+print x
+set x 7
+print x
+set x 10
+print x
+set x 13
+print x
+set x 16
+print x
+set x 19
+print x
+set x 22
+print x
+set x 25
+print x
+set x 28
+print x
+set x 31
+print x
+set x 34
+print x
+set x 37
+print x
+set x 40
+print x
+set x 43
+print x
+set x 46
+print x
+set x 49
+print x
+set x 52
+print x
+set x 55
+print x
+set x 58
+print x

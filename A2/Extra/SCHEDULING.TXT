@@ -1,0 +1,133 @@
+Q 3.1:
+Quanta = 2
+
+Output:
+Welcome to the Namdar shell!
+Version 1.0 Created January 2020
+$ exec ./sched1.txt ./sched2.txt ./sched3.txt
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a3
+a3
+b3
+a3
+b3
+b3
+c3
+c3
+d3
+c3
+d3
+d3
+
+Try1:
+CPU cycles elapsed: 489
+
+Try 2 :
+CPU cycles elapsed: 549
+
+Try 3:
+CPU cycles elapsed: 387
+
+Try 4:
+CPU cycles elapsed: 611
+
+Try 5:
+CPU cycles elapsed: 257
+
+Average: 458.6
+
+Q 3.2:
+Quanta = 5
+
+Output:
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a2
+a3
+a3
+b3
+c3
+d3
+b3
+c3
+d3
+b3
+c3
+d3
+
+Try1:
+CPU cycles elapsed: 230
+
+Try 2 :
+CPU cycles elapsed: 254
+
+Try 3:
+CPU cycles elapsed: 232
+
+Try 4:
+CPU cycles elapsed: 281
+
+Try 5:
+CPU cycles elapsed: 169
+
+Average: 233.2
+
+
+
+
+Quanta = 20
+
+Output:
+COMMAND         DESCRIPTION
+help            Displays all the commands
+quit            Exits / terminates the shell with "Bye!"
+set VAR STRING  Assigns a value to shell memory
+print VAR       Displays the STRING assigned to VAR
+run SCRIPT.TXT  Executes the file SCRIPT.TXT
+a1
+b1
+c1
+d1
+a2
+b2
+c2
+d2
+a3
+b3
+c3
+d3
+
+Try1:
+CPU cycles elapsed: 255
+
+Try 2 :
+CPU cycles elapsed: 196
+
+Try 3:
+CPU cycles elapsed: 202
+
+Try 4:
+CPU cycles elapsed: 219
+
+Try 5:
+CPU cycles elapsed: 224
+
+Average: 219.2
+
+
+3.3:
+a. I do see a bit of diffrance between the outputs with diffrent quanta, since the quantas are differnt the number/order of lines executes from each script is deffrent and that changes the resulting output of exec.
+
+b. The larger the qunata the smaller the avrage running time (CPU Cycles), this is because the larger the qunata is the less contex switches we need to do and the less time we spend on roatating the PCBs, contex switch ..., and the more time we spend in the CPU executing the commands.
+
+c. For one thing, I think it would be more fair to all the processes because they would all the same amout of time, but the code would be more complicated because we need to manage what happens if the quanta ends while in the middle of running a line...
+The output would depend on the quanta, like we have above, since the number of instrcutions executed depend on the time qunata and the ordering might be diffrent. I also belive, like we have above, the larger the time given the less CPU cycles we will have bacuse we will sepnd more time in the CPU and less time doing switches. However, I think the avrage will generally be more than what we have above since the contex switch oporations might be a bit more complicated.

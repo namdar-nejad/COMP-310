@@ -1,0 +1,3 @@
+help
+exec ./TESTDIR/text1.txt ./TESTDIR/text2.txt ./TESTDIR/text3.txt
+quit

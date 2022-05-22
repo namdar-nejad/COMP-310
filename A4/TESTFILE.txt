@@ -1,0 +1,11 @@
+mount p1 10 5
+write p1f1 [hello world test]
+read p1f1 p1x1
+print p1x1
+mount p2 5 5
+write p2f1 [hello]
+write p2f3 [12]
+write p2f1 [hello 1234]
+read p2f1 x1p2
+print x1p2
+quit

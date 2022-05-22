@@ -1,0 +1,15 @@
+Use system calls:
+
+fopen, wraps open()
+CPU cycles elapsed (fopen): 121
+
+printf, wraps write()
+CPU cycles elapsed (printf): 5
+
+Don't use system calls:
+
+strcmp()
+CPU cycles elapsed (strcmp): 1
+
+strlen()
+CPU cycles elapsed (strlen): 2
